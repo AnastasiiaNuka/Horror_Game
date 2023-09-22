@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 
-public class SC_FPSController : MonoBehaviour //шутер от первого лица FPS, управляет вращением камеры и движением игрока
+public class FPSCONTROLLER : MonoBehaviour //шутер от первого лица FPS, управляет вращением камеры и движением игрока
 {
     public float walkingSpeed = 7.5f;
     public float runningSpeed = 11.5f;
