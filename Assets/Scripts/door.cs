@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class door : MonoBehaviour
 {
-    public GameObject intText;
+    public GameObject intText, key, lockedText;
     public bool interactable, toggle;
     public Animator doorAnim; //анимация открытия
 
@@ -30,20 +30,34 @@ public class door : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E)) //если интерактив включен и нажата е, то дверь откроется
             {
-                toggle = !toggle;
-                if (toggle == true)
+                if (key.active == false) //открываем ключом дверь
                 {
-                    doorAnim.ResetTrigger("close");
-                    doorAnim.SetTrigger("open");
+                    toggle = !toggle;
+                    if (toggle == true)
+                    {
+                        doorAnim.ResetTrigger("close");
+                        doorAnim.SetTrigger("open");
+                    }
+                    if (toggle == false)
+                    {
+                        doorAnim.ResetTrigger("open");
+                        doorAnim.SetTrigger("close");
+                    }
+                    intText.SetActive(false);
+                    interactable = false;
                 }
-                if (toggle == false)
+                if (key.active == true)
                 {
-                    doorAnim.ResetTrigger("open");
-                    doorAnim.SetTrigger("close");
+                    lockedText.SetActive(true);
+                    StopCoroutine("disableText");
+                    StartCoroutine("disableText");
                 }
-                intText.SetActive(false);
-                interactable = false;
             }
         }
+    }
+    IEnumerator disableText()
+    {
+        yield return new WaitForSeconds(2.0f);
+        lockedText.SetActive(false);
     }
 }

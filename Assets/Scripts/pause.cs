@@ -49,7 +49,7 @@ public class pause : MonoBehaviour
     public void quitToMenu() //на сцену главного меню
     {
         Time.timeScale = 1;
-        AudioListener.pause = false;
+        AudioListener.pause = false; 
         SceneManager.LoadScene(sceneName);
     }
     public void quitToDesktop() //на рабочий стол выйдет
