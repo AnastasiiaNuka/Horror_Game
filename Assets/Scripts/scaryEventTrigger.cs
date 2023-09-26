@@ -13,7 +13,7 @@ public class scaryEventTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             scare.SetActive(true);
-            //scareSound.Play();
+            //scareSound.Play(); 
             collision.enabled = false;
         }
     }
