@@ -17,6 +17,8 @@ The controls are described below.
 ### :pushpin: Controls
 
 * Move - W A S D
+* Jump - Space
+* Pause - Escape
 * Toggle Lantern - F
 * Open Door/Close door/Pick Up - E
 
