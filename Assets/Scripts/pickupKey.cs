@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class pickupKey : MonoBehaviour
 {
-    public GameObject inttext, key; //текст взаимодействия, ключ на столе, в руке,
+    public GameObject inttext, key, spookystuff; //текст взаимодействия, ключ на столе, в руке,
     public AudioSource pickup; //звук поднятия
-    public bool interactable; // смотрит ли игрок на ключ и может ли поднять
+    public bool interactable, scaryEvent; // смотрит ли игрок на ключ и может ли поднять
 
     void OnTriggerStay(Collider other)
     {
@@ -33,6 +33,10 @@ public class pickupKey : MonoBehaviour
                 inttext.SetActive(false);
                 interactable = false;
                 //pickup.Play();
+                if(scaryEvent == true)
+                {
+                    spookystuff.SetActive(true); 
+                }
                 key.SetActive(false);
                
             }
