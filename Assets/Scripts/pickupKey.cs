@@ -32,7 +32,7 @@ public class pickupKey : MonoBehaviour
             {
                 inttext.SetActive(false);
                 interactable = false;
-                //pickup.Play();
+                pickup.Play();
                 if(scaryEvent == true)
                 {
                     spookystuff.SetActive(true); 
