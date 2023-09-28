@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class summonHunter : MonoBehaviour
 {
-    public GameObject hunter, block1, block2, block3;
+    public GameObject hunter, block1, block2, block3, block4;
     public Collider collision;
     public bool blocks;
 
@@ -17,7 +17,8 @@ public class summonHunter : MonoBehaviour
             {
                 block1.SetActive(true);
                 block2.SetActive(true);
-                block3.SetActive(false);
+                block3.SetActive(true);
+                block4.SetActive(true);
             }
             collision.enabled = false;
         }
