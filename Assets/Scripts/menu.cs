@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class menu : MonoBehaviour
 {
-    public GameObject loadingscreen;
+    public GameObject loadingscreen, menuObj, settingsObj;
     public string sceneName, sceneName2;
     public Button continueButton;
 
@@ -47,7 +47,17 @@ public class menu : MonoBehaviour
         Debug.Log("This will quit the game, only works in actual build, not in Unity editor.");
         Application.Quit();
     }
-  
+    public void SettingsMenu()
+    {
+        menuObj.SetActive(false);
+        settingsObj.SetActive(true);
+    }
+    public void backToMenu()
+    {
+        settingsObj.SetActive(false);
+        menuObj.SetActive(true);
+    }
+
 }
 
 

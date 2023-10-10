@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class pause : MonoBehaviour
 {
-    public GameObject pausemenu;
+    public GameObject pausemenu, settingsmenu;
     public string sceneName;
     public bool toggle; // стоит ли игра на паузе 
    public FPSCONTROLLER playerScript;
@@ -36,6 +36,18 @@ public class pause : MonoBehaviour
             }
         }
     }
+
+    public void toSettings()
+    {
+        pausemenu.SetActive(false);
+        settingsmenu.SetActive(true);
+    }
+    public void backToPause()
+    {
+        settingsmenu.SetActive(false);
+        pausemenu.SetActive(true);
+    }
+
     public void resumeGame() // при нажатии на Resume  игра снимается с паузы и меню паузы исчезает
     {
         toggle = false;

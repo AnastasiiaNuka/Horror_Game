@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class settingsScript : MonoBehaviour
 {
-    public Dropdown graphicsDrop, resoDrop;
-    public Slider volumeSlider;
-    public Toggle chromaticToggle, vignetteToggle, grainToggle;
-    public bool inGame;
-    public GameObject chromaticCam, vignetteCam, grainCam;
+    public TMP_Dropdown graphicsDrop, resoDrop; //раскрывающийся список 
+    public Slider volumeSlider; //ползунок громкости
+    public Toggle chromaticToggle, vignetteToggle, grainToggle; //эффекты
+    public bool inGame; //
+    public GameObject chromaticCam, vignetteCam, grainCam; //
 
     void Start()
     {
-        if (PlayerPrefs.GetInt("settingsSaved", 0) == 0)
+        if (PlayerPrefs.GetInt("settingsSaved", 0) == 0) //при первой загрузке игры или если настройки не сохранены, настройки будут по умолчанию
         {
             PlayerPrefs.SetInt("graphics", 0);
             PlayerPrefs.SetInt("resolution", 0);
@@ -57,7 +58,7 @@ public class settingsScript : MonoBehaviour
         //звук
         volumeSlider.value = PlayerPrefs.GetFloat("mastervolume");
         AudioListener.volume = PlayerPrefs.GetFloat("mastervolume");
-        //искажение изображения цвета
+        //искажение изображения цвета либо выключена либо включена
         if (PlayerPrefs.GetInt("chromatic", 1) == 1)
         {
             chromaticToggle.isOn = false;
@@ -74,7 +75,7 @@ public class settingsScript : MonoBehaviour
                 chromaticCam.SetActive(true);
             }
         }
-        //виньетка
+        //виньетка либо вкл либо выкл
         if (PlayerPrefs.GetInt("vignette", 1) == 1)
         {
             vignetteToggle.isOn = false;
@@ -109,7 +110,7 @@ public class settingsScript : MonoBehaviour
             }
         }
     }
-    public void setGraphics()
+    public void setGraphics() //выбор качества графики
     {
         if (graphicsDrop.value == 0)
         {
@@ -130,7 +131,7 @@ public class settingsScript : MonoBehaviour
             QualitySettings.SetQualityLevel(2);
         }
     }
-    public void setResolution()
+    public void setResolution() //выбор разрешения экрана
     {
         if (resoDrop.value == 0)
         {
