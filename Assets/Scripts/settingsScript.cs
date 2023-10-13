@@ -165,6 +165,7 @@ public class settingsScript : MonoBehaviour
     {
         if (chromaticToggle.isOn == false)
         {
+            Debug.Log("Chromatic Off");
             PlayerPrefs.SetInt("chromatic", 1);
             PlayerPrefs.Save();
             if (inGame == true)
@@ -174,6 +175,7 @@ public class settingsScript : MonoBehaviour
         }
         if (chromaticToggle.isOn == true)
         {
+            Debug.Log("Chromatic On");
             PlayerPrefs.SetInt("chromatic", 0);
             PlayerPrefs.Save();
             if (inGame == true)

@@ -17192,7 +17192,7 @@ MonoBehaviour:
   chromaticToggle: {fileID: 1107745035}
   vignetteToggle: {fileID: 580064429}
   grainToggle: {fileID: 1406464277}
-  inGame: 0
+  inGame: 1
   chromaticCam: {fileID: 327022412}
   vignetteCam: {fileID: 923337834}
   grainCam: {fileID: 2055281764}
