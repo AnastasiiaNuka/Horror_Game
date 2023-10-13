@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class menu : MonoBehaviour
 {
-    public GameObject loadingscreen, menuObj, settingsObj;
+    public GameObject loadingscreen, menuObj, settingsObj, controlsObj;
     public string sceneName, sceneName2;
     public Button continueButton;
 
@@ -52,9 +52,15 @@ public class menu : MonoBehaviour
         menuObj.SetActive(false);
         settingsObj.SetActive(true);
     }
+    public void controlsMenu()
+    {
+        menuObj.SetActive(false);
+        controlsObj.SetActive(true);
+    }
     public void backToMenu()
     {
         settingsObj.SetActive(false);
+        controlsObj.SetActive(false) ;
         menuObj.SetActive(true);
     }
 

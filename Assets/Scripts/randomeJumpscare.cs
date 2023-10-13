@@ -6,7 +6,7 @@ public class randomeJumpscare : MonoBehaviour
 {
     public GameObject img1, img2;
     public float randNum, waitTime;
-    public bool looping;
+    public bool looping; //возникнут неожиданно или нет
 
     void Start()
     {
