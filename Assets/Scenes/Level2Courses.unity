@@ -2892,7 +2892,7 @@ GameObject:
   - component: {fileID: 231587988}
   m_Layer: 0
   m_Name: destination (0)
-  m_TagString: Untagged
+  m_TagString: destination
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8684,7 +8684,7 @@ GameObject:
   - component: {fileID: 915546014}
   m_Layer: 0
   m_Name: destination (1)
-  m_TagString: Untagged
+  m_TagString: destination
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9920,7 +9920,7 @@ GameObject:
   - component: {fileID: 1059702779}
   m_Layer: 0
   m_Name: destination (3)
-  m_TagString: Untagged
+  m_TagString: destination
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9973,7 +9973,7 @@ GameObject:
   - component: {fileID: 1112483186}
   m_Layer: 0
   m_Name: destination (4)
-  m_TagString: Untagged
+  m_TagString: destination
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11866,7 +11866,7 @@ GameObject:
   - component: {fileID: 1226062634}
   m_Layer: 0
   m_Name: destination (5)
-  m_TagString: Untagged
+  m_TagString: destination
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12240,7 +12240,7 @@ GameObject:
   - component: {fileID: 1255598516}
   m_Layer: 0
   m_Name: destination (7)
-  m_TagString: Untagged
+  m_TagString: destination
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14950,7 +14950,7 @@ GameObject:
   - component: {fileID: 1528253708}
   m_Layer: 0
   m_Name: destination (6)
-  m_TagString: Untagged
+  m_TagString: destination
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15232,7 +15232,7 @@ GameObject:
   - component: {fileID: 1580710402}
   m_Layer: 0
   m_Name: destination (2)
-  m_TagString: Untagged
+  m_TagString: destination
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21272,7 +21272,7 @@ MonoBehaviour:
   walking: 0
   chasing: 0
   idle: 0
-  chaseTime: 0
+  chaseTime: 15
   idleTime: 5
 --- !u!54 &1622022058169326564
 Rigidbody:
