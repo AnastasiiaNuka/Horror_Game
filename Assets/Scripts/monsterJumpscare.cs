@@ -20,7 +20,7 @@ public class monsterJumpscare : MonoBehaviour
             monsterAnim.ResetTrigger("idle");
             monsterAnim.ResetTrigger("walk");
             monsterAnim.ResetTrigger("run");
-            monsterAnim.SetTrigger("jumpscare");
+            monsterAnim.SetTrigger("Attack");
             StartCoroutine(jumpscare());
         }
     }
