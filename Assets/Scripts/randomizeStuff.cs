@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class randomizeStuff : MonoBehaviour
 {
-    public GameObject thing1, thing2, thing3;
+    public GameObject switch1, switch2, switch3, switch4;
     int randNum;
 
     void Start()
@@ -12,15 +12,19 @@ public class randomizeStuff : MonoBehaviour
         randNum = Random.Range(0, 3);
         if (randNum == 0)
         {
-            thing1.SetActive(true);
+            switch1.SetActive(true);
         }
         if (randNum == 1)
         {
-            thing2.SetActive(true);
+            switch2.SetActive(true);
         }
         if (randNum == 2)
         {
-            thing3.SetActive(true);
+            switch3.SetActive(true);
+        }
+        if (randNum == 3)
+        {
+            switch4.SetActive(true);
         }
     }
 }
